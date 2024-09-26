@@ -48,7 +48,9 @@ app.use(session({
 app.use("/", route);
 // app.use(require("./controllers"))
 
-app.listen(port , function(){
-    console.log("The server is now running on " + port);
-    console.log("Connected Database: " + MONGO_URI);
-})
+// app.listen(port , function(){
+//     console.log("The server is now running on " + port);
+//     console.log("Connected Database: " + MONGO_URI);
+// });
+
+module.exports = app;  // Export the app
